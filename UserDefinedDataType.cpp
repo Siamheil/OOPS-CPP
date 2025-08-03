@@ -40,7 +40,7 @@ int main(){
 	s2.rno=34;
 	s2.cgpa=9.3;
 	s2.age=19;
-	
+
 	change(s2);
 	
 	printStudent (s1);
