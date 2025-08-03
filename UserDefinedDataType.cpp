@@ -8,6 +8,26 @@ public:
 	float cgpa;
 	int age;
 };
+
+class Car{
+public:
+	string name;
+	int price;
+	int seats;
+	string type;
+		
+};
+
+void printStudent(Student s){
+	cout<<s.name<<" "<<s.rno<<" "<<s.cgpa<<" "<<s.age<<endl;
+}
+
+void change(Student &s){
+	s.cgpa=9.6;
+	
+}
+
+
 int main(){
 	Student s1;
 	s1.name="Harshit";
@@ -21,7 +41,17 @@ int main(){
 	s2.cgpa=9.3;
 	s2.age=19;
 	
-	cout<<s1.name<<" "<<s1.rno<<" "<<s1.cgpa<<" "<<s1.age<<endl;
-	cout<<s2.name<<" "<<s2.rno<<" "<<s2.cgpa<<" "<<s2.age<<endl;
+	change(s2);
+	
+	printStudent (s1);
+	printStudent(s2);
+	
+	Car c1;
+	c1.name="Honda City";
+	c1.price=1300000;
+	c1.seats=6;
+	c1.type="sedan";
+	
+	cout<<c1.name<<" "<<c1.price<<" "<<c1.seats<<" "<<c1.type<<endl;
 	 
 }
